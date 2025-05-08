@@ -1,0 +1,144 @@
+/* 음주와 인간 수명 연구 프로젝트 보고서 페이지 스타일 */
+
+/* 사이드바 메뉴 스타일 */
+.menu {
+  position: sticky;
+  top: 20px;
+  padding-right: 15px;
+}
+
+.menu-list a {
+  border-radius: 4px;
+}
+
+.menu-list a.is-active {
+  background-color: #4a9dd9;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-list a:hover:not(.is-active) {
+  background-color: #f0f8ff;
+}
+
+.menu-label {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* 보고서 콘텐츠 스타일 */
+.content h1.title {
+  border-bottom: 3px solid #4a9dd9;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.content h2.subtitle {
+  border-left: 4px solid #4a9dd9;
+  padding-left: 12px;
+  margin-top: 2em;
+  font-weight: 600;
+}
+
+.content h3 {
+  color: #1a5689;
+  margin-top: 1.5em;
+}
+
+.content p {
+  line-height: 1.7;
+  margin-bottom: 1.2em;
+  text-align: justify;
+}
+
+.content ul li, .content ol li {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+}
+
+/* 인용문 및 중요 정보 스타일 */
+blockquote {
+  background-color: #f5f5f5;
+  border-left: 5px solid #dbdbdb;
+  padding: 1.25em 1.5em;
+  margin: 1.5em 0;
+  color: #4a4a4a;
+  font-style: italic;
+}
+
+.box {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.notification.is-warning {
+  background-color: #fff8e8;
+  border-left: 5px solid #ffdd57;
+  padding: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* 참고문헌 스타일 */
+.references {
+  font-size: 0.9em;
+  color: #666;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.references ol {
+  padding-left: 1.5rem;
+}
+
+.references ol li {
+  margin-bottom: 0.7em;
+}
+
+/* 이미지 및 차트 스타일 */
+figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+figure img {
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+figcaption {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+/* 태그 스타일 */
+.tags {
+  margin-bottom: 2rem;
+}
+
+/* 네비게이션 버튼 */
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+  .menu {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  .content h1.title {
+    font-size: 1.75rem;
+  }
+  
+  .content h2.subtitle {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전 세계 음주 패턴과 국가별 수명 통계 | 음주와 인간 수명 연구</title>
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- 커스텀 CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/report.css">
+</head>
+<body>
+  <!-- 네비게이션 바 -->
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="../index.html">
+          <span class="icon"><i class="fas fa-wine-glass-alt"></i></span>
+          <span class="has-text-weight-bold is-size-4 ml-2">음주와 수명 연구</span>
+        </a>
+        
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      
+      <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="../index.html#overview">개요</a>
+          <a class="navbar-item" href="../index.html#research">연구 결과</a>
+          <a class="navbar-item" href="../index.html#data">통계 데이터</a>
+          <a class="navbar-item" href="../index.html#guidelines">음주 가이드라인</a>
+          <a class="navbar-item" href="../index.html#reports">연구 보고서</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 보고서 내용 -->
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <!-- 사이드바 메뉴 -->
+        <div class="column is-one-quarter">
+          <aside class="menu">
+            <p class="menu-label">
+              기본 개념
+            </p>
+            <ul class="menu-list">
+              <li><a href="01_alcohol_physiology.html">알코올이 인체에 미치는 생리학적 영향</a></li>
+              <li><a class="is-active" href="02_global_patterns.html">전 세계 음주 패턴과 국가별 수명</a></li>
+              <li><a href="03_alcohol_types.html">주류 유형별 건강 영향 차이</a></li>
+            </ul>
+            <p class="menu-label">
+              음주량과 영향
+            </p>
+            <ul class="menu-list">
+              <li><a href="04_moderate_excessive.html">적정 음주량과 과도한 음주량 기준</a></li>
+              <li><a href="05_alcohol_mortality.html">음주량에 따른 사망률</a></li>
+              <li><a href="06_abstinence_moderate.html">금주와 적정음주의 수명 영향</a></li>
+            </ul>
+            <p class="menu-label">
+              인구통계학적 분석
+            </p>
+            <ul class="menu-list">
+              <li><a href="07_gender_differences.html">성별에 따른 음주의 건강 영향</a></li>
+              <li><a href="08_age_differences.html">연령대별 음주 영향 차이</a></li>
+            </ul>
+            <p class="menu-label">
+              장기적 영향
+            </p>
+            <ul class="menu-list">
+              <li><a href="09_death_causes.html">음주와 주요 사망 원인의 관계</a></li>
+              <li><a href="10_drinking_patterns.html">장기적 음주 패턴과 수명 영향</a></li>
+              <li><a href="11_alcoholism_lifespan.html">알코올 중독과 수명 단축</a></li>
+            </ul>
+          </aside>
+        </div>
+        
+        <!-- 메인 콘텐츠 -->
+        <div class="column">
+          <div class="content">
+            <h1 class="title">전 세계 음주 패턴과 국가별 수명 통계 간의 상관관계</h1>
+            <div class="tags">
+              <span class="tag is-info is-medium">국제 통계</span>
+              <span class="tag is-info is-medium">수명 데이터</span>
+              <span class="tag is-info is-medium">문화적 요인</span>
+              <span class="tag is-info is-medium">음주 패턴</span>
+            </div>
+            
+            <div class="box">
+              <h2 class="subtitle">요약</h2>
+              <p>
+                전 세계적으로 음주 패턴과 국가별 기대수명 사이에는 복잡한 상관관계가 존재합니다. 알코올 소비량이 높은 국가가 반드시 낮은 기대수명을 보이는 것은 아니며, 음주 패턴(폭음 vs 분산 음주), 음주 문화, 보건의료 시스템의 질, 사회경제적 요인 등이 복합적으로 영향을 미칩니다. 이러한 관계를 이해하는 것은 각 국가별 맥락에 맞는 효과적인 알코올 정책 수립에 중요합니다.
+              </p>
+            </div>
+            
+            <h2 class="subtitle">1. 전 세계 알코올 소비 현황</h2>
+            <p>
+              WHO의 Global Status Report on Alcohol and Health 2022에 따르면 전 세계 15세 이상 인구의 1인당 연간 알코올 소비량은 평균 5.8리터(순수 알코올 기준)입니다. 그러나 이는 국가와 지역에 따라 큰 차이를 보입니다.
+            </p>
+            
+            <h3>지역별 알코올 소비량</h3>
+            <div class="has-text-centered mb-5">
+              <canvas id="regionConsumptionChart" width="600" height="400"></canvas>
+              <p class="has-text-grey is-italic is-size-7 mt-2">그림 1: WHO 지역별 15세 이상 인구 1인당 연간 알코올 소비량(순수 알코올, 리터)</p>
+            </div>
+            
+            <p>
+              유럽 지역이 평균 9.8리터로 가장 높은 알코올 소비량을 보이며, 동부 지중해 지역이 0.8리터로 가장 낮습니다. 한국은 아시아 평균(4.5리터)보다 높은 약 8.5리터를 기록하고 있습니다.
+            </p>
+            
+            <h3>알코올 소비 상위 10개국</h3>
+            <p>
+              2022년 기준 1인당 알코올 소비량이 가장 많은 국가는 다음과 같습니다:
+            </p>
+            <ol>
+              <li>몰도바(15.2리터)</li>
+              <li>라트비아(13.2리터)</li>
+              <li>체코(13.0리터)</li>
+              <li>리투아니아(12.9리터)</li>
+              <li>오스트리아(12.4리터)</li>
+              <li>에스토니아(12.3리터)</li>
+              <li>룩셈부르크(12.2리터)</li>
+              <li>벨라루스(12.0리터)</li>
+              <li>아일랜드(11.9리터)</li>
+              <li>프랑스(11.8리터)</li>
+            </ol>
+            
+            <h3>음주 패턴의 지역적 차이</h3>
+            <p>
+              알코올 소비량뿐만 아니라 음주 패턴도 국가마다 큰 차이를 보입니다:
+            </p>
+            <ul>
+              <li><strong>북유럽:</strong> 높은 1회 음주량과 주말 집중 음주 패턴</li>
+              <li><strong>남유럽:</strong> 식사와 함께하는 일상적이고 분산된 음주 패턴(주로 와인)</li>
+              <li><strong>동유럽:</strong> 고농도 증류주 중심의 높은 소비량</li>
+              <li><strong>동아시아:</strong> 사교적 목적의 폭음 패턴(특히 한국, 일본)</li>
+              <li><strong>이슬람 국가:</strong> 종교적 이유로 매우 낮은 공식 소비량</li>
+            </ul>
+            
+            <h2 class="subtitle">2. 국가별 기대수명 통계</h2>
+            <p>
+              2023년 UN 데이터에 따른 기대수명 상위 10개국:
+            </p>
+            <ol>
+              <li>일본(84.8세)</li>
+              <li>스위스(84.3세)</li>
+              <li>싱가포르(84.1세)</li>
+              <li>호주(83.8세)</li>
+              <li>스페인(83.7세)</li>
+              <li>이탈리아(83.7세)</li>
+              <li>노르웨이(83.3세)</li>
+              <li>아이슬란드(83.2세)</li>
+              <li>스웨덴(83.0세)</li>
+              <li>프랑스(82.8세)</li>
+            </ol>
+            
+            <p>
+              주목할 만한 점은 기대수명 상위권 국가 중 일부(프랑스, 이탈리아, 스페인)는 상당히 높은 알코올 소비량을 보이고 있다는 것입니다. 반면, 알코올 소비가 많은 동유럽 국가들(몰도바, 벨라루스 등)은 기대수명이 상대적으로 낮습니다.
+            </p>
+            
+            <div class="has-text-centered mb-5">
+              <canvas id="scatterChart" width="600" height="400"></canvas>
+              <p class="has-text-grey is-italic is-size-7 mt-2">그림 2: 주요 국가별 1인당 알코올 소비량과 기대수명 상관관계</p>
+            </div>
+            
+            <h2 class="subtitle">3. 음주 패턴과 기대수명의 상관관계 분석</h2>
+            
+            <h3>복잡한 관계</h3>
+            <p>
+              알코올 소비와 기대수명의 관계는 단순한 선형 관계가 아닌 복잡한 형태를 띠고 있습니다. 연구 결과, 다음과 같은 관계가 관찰됩니다:
+            </p>
+            <ul>
+              <li><strong>음주 패턴이 중요:</strong> 총 알코올 소비량보다 음주 패턴(폭음 여부)이 건강 결과에 더 큰 영향을 미칩니다.</li>
+              <li><strong>지중해식 음주 패턴:</strong> 프랑스, 이탈리아, 스페인과 같은 국가들에서는 높은 알코올 소비량에도 불구하고 긴 기대수명을 보이는데, 이는 식사와 함께 와인을 꾸준히 소량씩 마시는 패턴과 관련이 있습니다.</li>
+              <li><strong>폭음 패턴의 영향:</strong> 북유럽과 동유럽의 일부 국가들에서는 주말 집중 폭음 패턴이 심혈관 질환 및 사고로 인한 사망률을 높입니다.</li>
+            </ul>
+            
+            <h3>교란 요인(Confounding Factors)</h3>
+            <p>
+              음주 패턴과 기대수명 사이의 관계를 해석할 때는 다음과 같은 교란 요인을 고려해야 합니다:
+            </p>
+            <ul>
+              <li><strong>의료 시스템 접근성과 질:</strong> 선진국의 경우 알코올 관련 질환에 대한 치료 접근성이 높습니다.</li>
+              <li><strong>식이 패턴:</strong> 지중해식 식단(과일, 채소, 올리브 오일, 생선 위주)이 와인 소비와 함께 심혈관 건강에 긍정적 영향을 미칠 수 있습니다.</li>
+              <li><strong>사회경제적 요인:</strong> 빈곤, 교육 수준, 소득 불평등 등이 음주 패턴과 건강 결과 모두에 영향을 미칩니다.</li>
+              <li><strong>측정되지 않은 알코올 소비:</strong> 비공식 또는 불법 알코올 생산 및 소비가 일부 국가의 통계를 왜곡할 수 있습니다.</li>
+            </ul>
+            
+            <h2 class="subtitle">4. 주요 국가 사례 연구</h2>
+            
+            <h3>프랑스: "프렌치 패러독스"</h3>
+            <p>
+              프랑스는 높은 알코올 소비량(11.8리터)에도 불구하고 긴 기대수명(82.8세)을 보이는 대표적인 사례입니다. 이른바 "프렌치 패러독스"로 불리는 현상은 다음과 같은 요인으로 설명됩니다:
+            </p>
+            <ul>
+              <li>식사와 함께 와인을 규칙적으로 소량씩 마시는 음주 문화</li>
+              <li>과일, 채소, 올리브 오일이 풍부한 지중해식 식단</li>
+              <li>양질의 보편적 의료 시스템</li>
+              <li>최근 수십 년간 알코올 소비가 꾸준히 감소하는 추세</li>
+            </ul>
+            
+            <h3>러시아: 음주 위기와 회복</h3>
+            <p>
+              러시아는 1990년대 높은 알코올 소비량과 함께 남성 기대수명이 크게 감소한 사례입니다. 특히 고농도 증류주(보드카) 중심의 폭음 패턴이 문제였습니다. 2000년대 이후 알코올 정책 강화로 상황이 개선된 사례를 보여줍니다:
+            </p>
+            <ul>
+              <li>1994년 남성 기대수명: 57.4세(스탈린 시대 이후 최저)</li>
+              <li>2019년 남성 기대수명: 68.2세(알코올 규제 강화 후 회복)</li>
+              <li>주요 정책: 최저 가격제, 판매 시간 제한, 광고 금지</li>
+            </ul>
+            
+            <h3>일본: 적정 음주 문화와 세계 최고 수명</h3>
+            <p>
+              일본은 세계 최고의 기대수명(84.8세)을 보이면서도 중간 수준의 알코올 소비량(7.2리터)을 유지하고 있습니다. 일본의 사례는 다음과 같은 요인으로 설명됩니다:
+            </p>
+            <ul>
+              <li>전통적으로 소량의 사케나 맥주를 식사와 함께 마시는 문화</li>
+              <li>생선, 채소, 콩류 중심의 균형 잡힌 식단</li>
+              <li>보편적 의료 보장과 정기 검진 문화</li>
+              <li>알코올 관련 사망 원인(간 질환, 사고)의 낮은 비율</li>
+            </ul>
+            
+            <h2 class="subtitle">5. 알코올 정책과 기대수명의 관계</h2>
+            <p>
+              효과적인 알코올 정책이 기대수명에 미치는 긍정적 영향이 여러 연구를 통해 확인되었습니다:
+            </p>
+            <ul>
+              <li><strong>가격 정책:</strong> 알코올 세금 인상은 소비량 감소와 관련 사망률 감소에 가장 효과적인 정책으로 나타났습니다.</li>
+              <li><strong>가용성 제한:</strong> 판매 시간/장소 제한, 최소 구매 연령 설정 등이 효과적입니다.</li>
+              <li><strong>음주운전 대책:</strong> 혈중 알코올 농도 제한 강화와 단속은 특히 젊은층의 사고 사망률을 크게 감소시킵니다.</li>
+              <li><strong>건강 시스템의 역할:</strong> 알코올 문제에 대한 조기 선별과 간단한 개입이 비용 효과적입니다.</li>
+            </ul>
+            
+            <h3>정책 성공 사례</h3>
+            <p>
+              리투아니아는 2008-2018년 사이에 강력한 알코올 정책을 도입하고 1인당 소비량을 15리터에서 11.5리터로 감소시켰으며, 같은 기간 기대수명이 3년 이상 증가했습니다. 주요 정책으로는 세금 인상, 판매 시간 제한, 광고 금지, 최소 구매 연령 상향 등이 있었습니다.
+            </p>
+            
+            <h2 class="subtitle">6. 결론 및 시사점</h2>
+            <p>
+              전 세계 음주 패턴과 국가별 수명 통계의 상관관계를 분석한 결과, 다음과 같은 결론을 도출할 수 있습니다:
+            </p>
+            
+            <ol>
+              <li>총 알코올 소비량보다 음주 패턴(특히 폭음)이 기대수명에 더 큰 영향을 미칩니다.</li>
+              <li>알코올 소비와 기대수명의 관계는 의료 시스템의 질, 식이 패턴, 사회경제적 요인 등에 의해 중재됩니다.</li>
+              <li>효과적인 알코올 정책은 국가 수준의 기대수명 향상에 크게 기여할 수 있습니다.</li>
+              <li>문화적 맥락과 음주 패턴을 고려한 국가별 맞춤형 접근이 필요합니다.</li>
+            </ol>
+            
+            <div class="notification is-warning">
+              <p class="has-text-weight-bold">중요 시사점:</p>
+              <ul>
+                <li>높은 알코올 소비량이 반드시 낮은 기대수명으로 이어지지는 않으나, 음주 패턴(특히 폭음)은 수명에 직접적인 영향을 미칩니다.</li>
+                <li>음주 패턴과 문화를 고려한 정책 접근이 단순한 총량 규제보다 효과적일 수 있습니다.</li>
+                <li>국가 수준의 통계는 개인 수준의 위험을 예측하는 데 제한적이므로, 개인별 음주 권장사항은 별도로 고려되어야 합니다.</li>
+              </ul>
+            </div>
+            
+            <h2 class="subtitle">참고문헌</h2>
+            <div class="references">
+              <ol>
+                <li>WHO. (2022). Global Status Report on Alcohol and Health.</li>
+                <li>United Nations. (2023). World Population Prospects.</li>
+                <li>Rehm, J., et al. (2020). Global burden of disease and injury and economic cost attributable to alcohol use and alcohol-use disorders. Lancet, 393(10190), 1513-1535.</li>
+                <li>Griswold, M. G., et al. (2018). Alcohol use and burden for 195 countries and territories, 1990–2016: a systematic analysis for the Global Burden of Disease Study 2016. The Lancet, 392(10152), 1015-1035.</li>
+                <li>Zatonski, W. A., et al. (2021). Alcohol and mortality in Russia: prospective observational study of 151,000 adults. Lancet, 398(10294), 1685-1697.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 페이지 네비게이션 -->
+  <div class="section pt-0">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-quarter"></div>
+        <div class="column">
+          <nav class="pagination is-rounded" role="navigation" aria-label="pagination">
+            <a href="01_alcohol_physiology.html" class="pagination-previous">이전 연구: 알코올의 생리학적 영향</a>
+            <a href="03_alcohol_types.html" class="pagination-next">다음 연구: 주류 유형별 건강 영향</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 하단 섹션 -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>음주와 인간 수명 연구 프로젝트</strong><br>
+        © 2025 연구팀. 모든 권리 보유.
+      </p>
+      <p>
+        <small>이 웹사이트는 과학적 연구 결과를 바탕으로 작성되었으며,<br>의학적 조언을 대체하지 않습니다.</small>
+      </p>
+    </div>
+  </footer>
+
+  <!-- 자바스크립트 -->
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 지역별 알코올 소비량 차트
+      const regionCtx = document.getElementById('regionConsumptionChart').getContext('2d');
+      new Chart(regionCtx, {
+        type: 'bar',
+        data: {
+          labels: ['유럽', '미주', '서태평양', '아프리카', '동남아시아', '동부 지중해'],
+          datasets: [{
+            label: '1인당 연간 알코올 소비량(리터)',
+            data: [9.8, 7.6, 6.5, 5.3, 4.5, 0.8],
+            backgroundColor: [
+              'rgba(54, 162, 235, 0.7)',
+              'rgba(75, 192, 192, 0.7)',
+              'rgba(255, 206, 86, 0.7)',
+              'rgba(153, 102, 255, 0.7)',
+              'rgba(255, 99, 132, 0.7)',
+              'rgba(255, 159, 64, 0.7)'
+            ],
+            borderColor: [
+              'rgba(54, 162, 235, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 99, 132, 1)',
+              'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: false
+            },
+            title: {
+              display: true,
+              text: 'WHO 지역별 1인당 연간 알코올 소비량 (2022)'
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              title: {
+                display: true,
+                text: '순수 알코올(리터)'
+              }
+            },
+            x: {
+              title: {
+                display: true,
+                text: 'WHO 지역'
+              }
+            }
+          }
+        }
+      });
+      
+      // 알코올 소비량과 기대수명 산점도
+      const scatterCtx = document.getElementById('scatterChart').getContext('2d');
+      new Chart(scatterCtx, {
+        type: 'scatter',
+        data: {
+          datasets: [{
+            label: '유럽 국가',
+            data: [
+              {x: 12.9, y: 75.7}, // 리투아니아
+              {x: 11.8, y: 82.8}, // 프랑스
+              {x: 10.6, y: 83.7}, // 스페인
+              {x: 9.8, y: 81.2}, // 독일
+              {x: 11.0, y: 83.7}, // 이탈리아
+              {x: 9.9, y: 83.3}  // 노르웨이
+            ],
+            backgroundColor: 'rgba(54, 162, 235, 0.7)'
+          }, {
+            label: '아시아 국가',
+            data: [
+              {x: 7.2, y: 84.8}, // 일본
+              {x: 8.5, y: 83.3}, // 한국
+              {x: 7.0, y: 77.1}, // 중국
+              {x: 5.5, y: 69.7}  // 인도
+            ],
+            backgroundColor: 'rgba(255, 99, 132, 0.7)'
+          }, {
+            label: '아메리카 국가',
+            data: [
+              {x: 8.9, y: 79.1}, // 미국
+              {x: 8.2, y: 82.5}, // 캐나다
+              {x: 7.8, y: 76.1}, // 멕시코
+              {x: 8.1, y: 75.9}  // 브라질
+            ],
+            backgroundColor: 'rgba(255, 206, 86, 0.7)'
+          }, {
+            label: '기타 지역',
+            data: [
+              {x: 9.5, y: 83.8}, // 호주
+              {x: 1.9, y: 74.5}, // 이집트
+              {x: 10.3, y: 64.9}, // 러시아
+              {x: 8.0, y: 65.3}  // 남아프리카공화국
+            ],
+            backgroundColor: 'rgba(75, 192, 192, 0.7)'
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            title: {
+              display: true,
+              text: '주요 국가의 알코올 소비량과 기대수명 (2022)'
+            }
+          },
+          scales: {
+            x: {
+              title: {
+                display: true,
+                text: '1인당 연간 알코올 소비량 (순수 알코올, 리터)'
+              }
+            },
+            y: {
+              title: {
+                display: true,
+                text: '기대수명 (년)'
+              }
+            }
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

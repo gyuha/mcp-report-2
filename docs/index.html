@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>음주와 인간 수명 연구</title>
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- 커스텀 CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 네비게이션 바 -->
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <span class="icon"><i class="fas fa-wine-glass-alt"></i></span>
+          <span class="has-text-weight-bold is-size-4 ml-2">음주와 수명 연구</span>
+        </a>
+        
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      
+      <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#overview">개요</a>
+          <a class="navbar-item" href="#research">연구 결과</a>
+          <a class="navbar-item" href="#data">통계 데이터</a>
+          <a class="navbar-item" href="#guidelines">음주 가이드라인</a>
+          <a class="navbar-item" href="#reports">연구 보고서</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 영웅 섹션 -->
+  <section class="hero is-info is-medium">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1">
+          음주와 인간 수명 연구
+        </h1>
+        <h2 class="subtitle is-3">
+          알코올이 건강과 수명에 미치는 과학적 영향
+        </h2>
+        <p class="mt-5">
+          <a href="#research" class="button is-primary is-large">연구 결과 보기</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 연구 개요 섹션 -->
+  <section id="overview" class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">연구 개요</h1>
+      <div class="columns">
+        <div class="column">
+          <div class="content">
+            <p class="is-size-5">
+              본 연구는 알코올 소비가 인간의 기대수명에 미치는 영향을 종합적으로 분석합니다. 
+              다양한 음주 패턴, 알코올 소비량, 성별 및 연령에 따른 차이, 그리고 특정 질병과의 관련성을 
+              체계적으로 검토하여 장기적 건강 영향에 대한 근거 중심의 정보를 제공합니다.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <p class="is-size-5">
+              본 연구는 세계 각국의 역학 데이터, 의학 연구 결과, 그리고 건강 통계를 바탕으로 
+              음주가 수명에 미치는 영향에 대한 과학적 근거를 탐색하며, 궁극적으로 수명 극대화를 위한 
+              음주 관련 가이드라인을 제시하는 것을 목표로 합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 주요 연구 결과 섹션 -->
+  <section id="research" class="section has-background-light">
+    <div class="container">
+      <h1 class="title has-text-centered">주요 연구 결과</h1>
+      <div class="columns is-multiline">
+        <!-- 연구 결과 1 -->
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-4">알코올의 생리학적 영향</p>
+              <div class="content">
+                <p>알코올은 중추신경계 억제제로 작용하며, 장기적으로 간, 심혈관계, 신경계, 면역계에 다양한 부정적 영향을 미칩니다.</p>
+                <p>간에서의 알코올 대사는 지방간, 간염, 간경변으로 이어질 수 있는 독성 대사물질을 생성합니다.</p>
+              </div>
+              <a href="reports/01_alcohol_physiology.html" class="button is-primary is-outlined is-fullwidth">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 연구 결과 2 -->
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-4">음주량과 수명 관계</p>
+              <div class="content">
+                <p>최근 연구에 따르면 '안전한 음주량'이라는 개념은 재검토되고 있으며, 음주량과 건강 위험은 선형 관계를 보입니다.</p>
+                <p>매일 한 잔의 음주만으로도 수명이 약 2-3개월 단축될 수 있음이 밝혀졌습니다.</p>
+              </div>
+              <a href="reports/05_alcohol_mortality.html" class="button is-primary is-outlined is-fullwidth">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 연구 결과 3 -->
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-4">성별 차이</p>
+              <div class="content">
+                <p>여성은 남성보다 알코올 대사 능력이 낮아 같은 양의 음주에도 건강 위험이 더 높습니다.</p>
+                <p>여성의 경우 소량의 음주에도 유방암 위험이 증가하는 특별한 위험 요소가 존재합니다.</p>
+              </div>
+              <a href="reports/07_gender_differences.html" class="button is-primary is-outlined is-fullwidth">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 연구 결과 4 -->
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-4">알코올 중독과 수명</p>
+              <div class="content">
+                <p>알코올 중독자는 평균적으로 20-30년의 기대수명 단축을 경험합니다.</p>
+                <p>금주를 통해 알코올 중독자의 생존율은 크게 개선될 수 있으며, 일부 장기 손상은 회복 가능합니다.</p>
+              </div>
+              <a href="reports/11_alcoholism_lifespan.html" class="button is-primary is-outlined is-fullwidth">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 연구 결과 5 -->
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-4">음주 패턴의 중요성</p>
+              <div class="content">
+                <p>같은 총량의 알코올이라도 폭음은 분산 음주보다 건강 위험이 더 높습니다.</p>
+                <p>불규칙적인 과다 음주는 심혈관 질환, 간 질환 위험을 크게 증가시킵니다.</p>
+              </div>
+              <a href="reports/10_drinking_patterns.html" class="button is-primary is-outlined is-fullwidth">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 연구 결과 6 -->
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-4">적정 음주의 효과</p>
+              <div class="content">
+                <p>'적정 음주의 심혈관 보호 효과'는 최근 연구에서 그 근거가 약화되고 있습니다.</p>
+                <p>과거 연구의 방법론적 한계(비음주자 집단에 과거 과음자 포함 등)로 인해 적정 음주의 이점이 과대평가되었을 가능성이 있습니다.</p>
+              </div>
+              <a href="reports/12_moderate_drinking.html" class="button is-primary is-outlined is-fullwidth">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 통계 데이터 섹션 -->
+  <section id="data" class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">통계 데이터</h1>
+      <div class="columns">
+        <div class="column is-half">
+          <div class="box">
+            <h3 class="title is-4 has-text-centered">음주량과 기대수명 영향</h3>
+            <canvas id="lifespanChart"></canvas>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="box">
+            <h3 class="title is-4 has-text-centered">주류별 건강 위험</h3>
+            <canvas id="alcoholTypeChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="columns mt-5">
+        <div class="column is-half">
+          <div class="box">
+            <h3 class="title is-4 has-text-centered">성별에 따른 알코올 영향</h3>
+            <canvas id="genderChart"></canvas>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="box">
+            <h3 class="title is-4 has-text-centered">알코올 관련 사망 원인</h3>
+            <canvas id="deathCauseChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 음주 가이드라인 섹션 -->
+  <section id="guidelines" class="section has-background-light">
+    <div class="container">
+      <h1 class="title has-text-centered">수명 극대화를 위한 음주 가이드라인</h1>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="notification is-warning">
+            <p class="has-text-weight-bold">최신 연구에 따르면 '완전히 안전한' 음주량은 없습니다.</p>
+          </div>
+          <div class="box">
+            <div class="content">
+              <h3 class="title is-4">건강과 수명을 고려한 권장사항</h3>
+              <ol>
+                <li>비음주자는 건강상의 이유로 음주를 시작하지 않는 것이 좋습니다.</li>
+                <li>이미 음주를 하고 있다면, 음주량을 최소화하는 것이 건강에 유리합니다.</li>
+                <li>남성은 하루 2잔 이하, 여성은 하루 1잔 이하로 제한하는 것이 권장됩니다.</li>
+                <li>주 2일 이상은 완전 금주하여 신체가 회복할 시간을 주는 것이 중요합니다.</li>
+                <li>폭음은 절대 피해야 합니다 (한 번에 남성 4잔, 여성 3잔 이상).</li>
+                <li>임신, 운전, 약물 복용 시에는 완전 금주가 필요합니다.</li>
+              </ol>
+              <h3 class="title is-4 mt-5">음주량 감소 전략</h3>
+              <ul>
+                <li>알코올 함량이 낮은 음료를 선택하기</li>
+                <li>물이나 무알콜 음료를 중간에 마시기</li>
+                <li>천천히 마시고 음주 시간 늘리기</li>
+                <li>식사와 함께 음주하기</li>
+                <li>음주일을 미리 계획하고 기록하기</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 연구 보고서 섹션 -->
+  <section id="reports" class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">전체 연구 보고서</h1>
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <div class="box">
+            <h3 class="subtitle">기본 개념</h3>
+            <div class="content">
+              <ul>
+                <li><a href="reports/01_alcohol_physiology.html">알코올이 인체에 미치는 생리학적 영향</a></li>
+                <li><a href="reports/02_global_patterns.html">전 세계 음주 패턴과 국가별 수명 통계</a></li>
+                <li><a href="reports/03_alcohol_types.html">주류 유형별 건강 영향 차이</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box">
+            <h3 class="subtitle">음주량과 영향</h3>
+            <div class="content">
+              <ul>
+                <li><a href="reports/04_moderate_excessive.html">적정 음주량과 과도한 음주량 기준</a></li>
+                <li><a href="reports/05_alcohol_mortality.html">음주량에 따른 사망률 및 질병 발생률</a></li>
+                <li><a href="reports/06_abstinence_moderate.html">완전 금주와 적정 음주의 수명 영향</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box">
+            <h3 class="subtitle">인구통계학적 분석</h3>
+            <div class="content">
+              <ul>
+                <li><a href="reports/07_gender_differences.html">성별에 따른 음주의 건강 영향 차이</a></li>
+                <li><a href="reports/08_age_differences.html">연령대별 음주 영향 차이와 권장 가이드라인</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box">
+            <h3 class="subtitle">장기적 영향</h3>
+            <div class="content">
+              <ul>
+                <li><a href="reports/09_death_causes.html">음주와 주요 사망 원인의 관계</a></li>
+                <li><a href="reports/10_drinking_patterns.html">장기적 음주 패턴과 평균 수명 영향</a></li>
+                <li><a href="reports/11_alcoholism_lifespan.html">알코올 중독의 수명 단축 영향 및 회복 가능성</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box">
+            <h3 class="subtitle">다양한 측면</h3>
+            <div class="content">
+              <ul>
+                <li><a href="reports/12_moderate_drinking.html">적정 음주의 잠재적 건강상 이점</a></li>
+                <li><a href="reports/13_disease_burden.html">알코올 관련 사망 및 질병 부담</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box">
+            <h3 class="subtitle">결론 및 가이드라인</h3>
+            <div class="content">
+              <ul>
+                <li><a href="reports/14_guidelines.html">수명 극대화를 위한 음주 가이드라인</a></li>
+                <li><a href="reports/15_improvement.html">음주 습관 개선을 통한 건강 증진</a></li>
+                <li><a href="reports/16_conclusion.html">연구 결과 종합 및 최종 결론</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 하단 섹션 -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>음주와 인간 수명 연구 프로젝트</strong><br>
+        © 2025 연구팀. 모든 권리 보유.
+      </p>
+      <p>
+        <small>이 웹사이트는 과학적 연구 결과를 바탕으로 작성되었으며,<br>의학적 조언을 대체하지 않습니다.</small>
+      </p>
+    </div>
+  </footer>
+
+  <!-- 자바스크립트 -->
+  <script src="js/main.js"></script>
+  <script src="js/charts.js"></script>
+</body>
+</html>

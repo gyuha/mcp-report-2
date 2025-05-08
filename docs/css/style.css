@@ -1,0 +1,113 @@
+/* 음주와 인간 수명 연구 프로젝트 사용자 정의 스타일 */
+
+/* 전체 사이트 스타일 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 영웅 섹션 스타일 */
+.hero.is-info {
+  background: linear-gradient(135deg, #4a9dd9, #1a5689);
+}
+
+/* 카드 효과 */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 버튼 스타일 */
+.button.is-primary {
+  transition: all 0.3s;
+}
+
+.button.is-primary:hover {
+  transform: scale(1.05);
+}
+
+/* 연구 보고서 링크 스타일 */
+.content ul li a {
+  transition: color 0.3s;
+  display: block;
+  padding: 5px 0;
+}
+
+.content ul li a:hover {
+  color: #3273dc;
+}
+
+/* 차트 컨테이너 스타일 */
+.box {
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-2px);
+}
+
+/* 네비게이션 바 활성화 스타일 */
+.navbar-item.is-active,
+.navbar-item:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* 모바일 최적화 */
+@media screen and (max-width: 768px) {
+  .title.is-1 {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle.is-3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* 가이드라인 섹션 스타일 */
+#guidelines .notification {
+  margin-bottom: 1.5rem;
+}
+
+#guidelines ol li,
+#guidelines ul li {
+  margin-bottom: 0.75rem;
+}
+
+/* 페이지 전환 효과 */
+.section {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 연구 결과 카드 내 콘텐츠 균일 높이 */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-content .content {
+  flex-grow: 1;
+}
+
+/* 차트 크기 제한 */
+canvas {
+  max-height: 400px;
+}
