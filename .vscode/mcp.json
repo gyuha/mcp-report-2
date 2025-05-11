@@ -11,9 +11,17 @@
     },
     "googleSearch": {
       "command": "npx",
+      "args": ["-y", "g-search-mcp"]
+    },
+    "mcp_generate_images": {
+      "command": "npx",
       "args": [
         "-y",
-        "g-search-mcp"
+        "@smithery/cli@latest",
+        "run",
+        "@chenyeju295/mcp_generate_images",
+        "--key",
+        "3532dcf0-1356-4147-bd63-3291b5e72e90"
       ]
     }
   }
